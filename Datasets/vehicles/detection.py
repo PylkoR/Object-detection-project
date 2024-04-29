@@ -1,5 +1,5 @@
 from ultralytics import YOLO
 
-model = YOLO("best.pt")
+model = YOLO("best_s_57.pt")
 
-model.predict(source="test/images/A10_png.rf.9d5bd039e76fb95a256426daf5a4d59e.jpg", show=True, conf=0.5)
+photo = model.predict(source="test_predict/", show=True, conf=0.5, save=True)
