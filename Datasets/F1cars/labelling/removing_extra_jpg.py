@@ -1,8 +1,8 @@
 import os
 
 # Ścieżki do katalogów zawierających zdjęcia i pliki tekstowe
-photo_dir = "/labelling/images"
-txt_dir = "/labelling/labels"
+photo_dir = "images"
+txt_dir = "labels"
 
 # Pobranie listy plików w obu katalogach
 photo_files = os.listdir(photo_dir)
@@ -17,9 +17,9 @@ missing_txt_files = photo_names - txt_names
 
 # Usunięcie zdjęć bez odpowiadającego pliku txt
 for missing_txt in missing_txt_files:
-    photo_path = os.path.join(photo_dir, missing_txt + ".jpeg")
+    photo_path = os.path.join(photo_dir, missing_txt + ".jpg")
     if os.path.exists(photo_path):
         os.remove(photo_path)
-        print(f"Usunięto zdjęcie: {missing_txt}.jpeg")
+        print(f"Usunięto zdjęcie: {missing_txt}.jpg")
 
 print("Zakończono sprawdzanie i usuwanie niepotrzebnych zdjęć.")
