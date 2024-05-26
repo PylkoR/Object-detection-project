@@ -2,7 +2,7 @@ import os
 
 # Ścieżki do katalogów zawierających zdjęcia i pliki tekstowe
 photo_dir = "images"
-txt_dir = "labels"
+txt_dir = "labels_bolid"
 
 # Pobranie listy plików w obu katalogach
 photo_files = os.listdir(photo_dir)

@@ -20,6 +20,5 @@ def change_first_character(directory):
                     print('0' + line[1:], end='')
             print(f"Pierwszy znak w pliku {filename} został zmieniony na '0'.")
 
-# Przykładowe użycie
-directory_path = "sciezka/do/katalogu"
+directory_path = "labels_bolid"
 change_first_character(directory_path)
