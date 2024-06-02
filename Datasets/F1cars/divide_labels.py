@@ -23,8 +23,8 @@ def move_txt_files_with_matching_images(images_dir, txt_dir, target_dir):
 
 
 # Przykład użycia:
-images_directory = 'data/train/images'
-labels_directory = 'labelling/labels_bolid'
-target_directory = 'data/train/labels'
+images_directory = 'data/test/images'
+labels_directory = 'labelling/labels_teams'
+target_directory = 'data/test/labels_teams'
 
 move_txt_files_with_matching_images(images_directory, labels_directory, target_directory)
