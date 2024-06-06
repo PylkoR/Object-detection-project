@@ -3,7 +3,7 @@ import cv2
 import os
 
 model_path = 'train_results/train_colab_3/weights/best.pt'
-data_path = 'data/test/images'
+data_path = 'data/test/images/frame_japan_7.jpg'
 save_path = 'runs/stats'
 
 # Załaduj model
@@ -67,7 +67,7 @@ for result in results:
         cv2.rectangle(img, (x, y - text_height - baseline), (x + text_width, y + baseline), (185, 189, 185), cv2.FILLED)
 
         # Rysuj tekst na tle
-        color = colors.get(team, (0, 0, 0))  # Czarny kolor dla tekstu, jeśli klasa nie jest w słowniku
+        color = colors.get(team)
         cv2.putText(img, text, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1, color, 2, cv2.LINE_AA)
 
     # Pobierz ścieżkę wyjściową

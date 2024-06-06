@@ -79,10 +79,10 @@ while cap.isOpened():
             y = img_height - 10 - idx * (text_height + 20)
 
             # Rysuj tło dla tekstu
-            cv2.rectangle(img, (x, y - text_height - baseline), (x + text_width, y + baseline), (255, 255, 255), cv2.FILLED)
+            cv2.rectangle(img, (x, y - text_height - baseline), (x + text_width, y + baseline), (185, 189, 185), cv2.FILLED)
 
             # Rysuj tekst na tle
-            color = colors.get(team, (0, 0, 0))  # Czarny kolor dla tekstu, jeśli klasa nie jest w słowniku
+            color = colors.get(team)
             cv2.putText(img, text, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1, color, 2, cv2.LINE_AA)
 
         # Zapisz zmodyfikowaną klatkę
