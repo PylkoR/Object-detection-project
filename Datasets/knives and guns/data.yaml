@@ -1,5 +1,0 @@
-train: C:\Users\pylko\Repo_YOLO_project\Object-detection-project\Datasets\knives and guns\train
-val: C:\Users\pylko\Repo_YOLO_project\Object-detection-project\Datasets\knives and guns\valid
-
-nc: 2
-names: ["knife", "pistol"]

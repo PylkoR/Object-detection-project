@@ -1,6 +1,0 @@
-train: C:\Users\pylko\Repo_YOLO_project\Object-detection-project\Datasets\vehicles\train
-val: C:\Users\pylko\Repo_YOLO_project\Object-detection-project\Datasets\vehicles\valid
-test: C:\Users\pylko\Repo_YOLO_project\Object-detection-project\Datasets\vehicles\test
-
-nc: 4
-names: ['bike', 'bus', 'car', 'truck']
