@@ -22,7 +22,6 @@ def move_txt_files_with_matching_images(images_dir, txt_dir, target_dir):
                 print(f"Przeniesiono: {txt_filename}")
 
 
-# Przykład użycia:
 images_directory = 'data/test/images'
 labels_directory = 'labelling/labels_teams'
 target_directory = 'data/test/labels_teams'
