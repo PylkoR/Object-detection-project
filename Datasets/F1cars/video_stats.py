@@ -4,7 +4,7 @@ import os
 
 model_path = 'train_results/train_colab_3/weights/best.pt'
 video_path = 'data/videos/Imola15s.mp4'
-output_video_path = 'runs/stats/output_video.mp4'
+output_video_path = 'runs/stats/colab_3/output_video.mp4'
 
 # Załaduj model
 model = YOLO(model_path)
@@ -20,7 +20,8 @@ colors = {
     'Sauber': (13, 245, 5),
     'Alpine': (176, 30, 110),
     'Williams': (201, 11, 8),
-    'VisaRB': (0, 0, 0)
+    'VisaRB': (0, 0, 0),
+    'bolid': (52, 52, 235)
 }
 
 # Wczytaj wideo

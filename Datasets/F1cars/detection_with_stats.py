@@ -2,9 +2,9 @@ from ultralytics import YOLO
 import cv2
 import os
 
-model_path = 'train_results/train_colab_3/weights/best.pt'
-data_path = 'data/test/images/frame_japan_7.jpg'
-save_path = 'runs/stats'
+model_path = 'train_results/train_colab_1/weights/best.pt'
+data_path = 'data/test/images'
+save_path = 'runs/stats/colab_1'
 
 # Załaduj model
 model = YOLO(model_path)
@@ -19,8 +19,9 @@ colors = {
     'Haas': (255, 255, 255),
     'Sauber': (13, 245, 5),
     'Alpine': (176, 30, 110),
-    'Willliams': (201, 11, 8),
-    'VisaRB': (0, 0, 0)
+    'Williams': (201, 11, 8),
+    'VisaRB': (0, 0, 0),
+    'bolid': (52, 52, 235)
 }
 
 # Wykonaj predykcję

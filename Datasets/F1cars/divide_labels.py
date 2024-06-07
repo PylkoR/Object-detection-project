@@ -1,6 +1,8 @@
 import os
 import shutil
 
+#przemieszcza etykiety zdjęć do odpowideniego katalogu zbioru uczącego
+
 def move_txt_files_with_matching_images(images_dir, txt_dir, target_dir):
     # Upewnij się, że katalog docelowy istnieje
     if not os.path.exists(target_dir):
@@ -22,8 +24,8 @@ def move_txt_files_with_matching_images(images_dir, txt_dir, target_dir):
                 print(f"Przeniesiono: {txt_filename}")
 
 
-images_directory = 'data/test/images'
+images_directory = 'data/train/images'
 labels_directory = 'labelling/labels_teams'
-target_directory = 'data/test/labels_teams'
+target_directory = 'data/train/labels_teams'
 
 move_txt_files_with_matching_images(images_directory, labels_directory, target_directory)

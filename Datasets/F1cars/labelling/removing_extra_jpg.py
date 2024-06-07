@@ -1,8 +1,10 @@
 import os
 
+#usuwa zdjęcia z katalogu /images, które nie mają odpowiadającej etykiety w katalogu /labels
+
 # Ścieżki do katalogów zawierających zdjęcia i pliki tekstowe
 photo_dir = "images"
-txt_dir = "labels_bolid"
+txt_dir = "labels_teams"
 
 # Pobranie listy plików w obu katalogach
 photo_files = os.listdir(photo_dir)

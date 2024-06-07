@@ -1,6 +1,8 @@
 import cv2
 import os
 
+#Zapisuje klatkę filmiku co 3 sekundy i zapisuje do wskazanego katalogu
+
 def extract_frames(video_path, output_dir, interval_seconds=None):
     # Wczytaj film
     cap = cv2.VideoCapture(video_path)
@@ -28,15 +30,15 @@ def extract_frames(video_path, output_dir, interval_seconds=None):
 
         # Zapisz klatkę co określony interwał czasowy (w sekundach)
         if interval_seconds and frame_count % int(fps * interval_seconds) == 0:
-            frame_filename = os.path.join(output_dir, f"frame_china_{frame_count/(fps * interval_seconds)}.jpg")
+            frame_filename = os.path.join(output_dir, f"frame_imola_{int(frame_count/(fps * interval_seconds))}.jpg")
             cv2.imwrite(frame_filename, frame)
-            print(f"Saved frame {frame_count/(fps * interval_seconds)}")
+            print(f"Saved frame {int(frame_count/(fps * interval_seconds))}")
 
     cap.release()
     print(f"Zapisano {frame_count/(fps * interval_seconds)} klatek z {total_frames} wideo.")
 
 
-video_path = "C:/Users/pylko/Repo_YOLO_project/Object-detection-project/Datasets/F1cars/labelling/videos/Race-Highlights-2024-Chinese-Grand-Prix.mp4"
+video_path = "videos/Race-Highlights-2024-Emilia-Romagna-Grand-Prix.mp4"
 output_directory = "images/"
 interval_seconds = 3
 
