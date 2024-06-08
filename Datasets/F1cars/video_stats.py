@@ -3,8 +3,8 @@ import cv2
 import os
 
 model_path = 'train_results/train_colab_3/weights/best.pt'
-video_path = 'data/videos/Imola15s.mp4'
-output_video_path = 'runs/stats/colab_3/output_video.mp4'
+video_path = 'data/videos/saudi_arabia_15s.mp4'
+output_video_path = 'runs/stats/colab_3/saudi_arabia.mp4'
 
 # Załaduj model
 model = YOLO(model_path)
@@ -70,7 +70,7 @@ while cap.isOpened():
         # Pobierz wysokość obrazu
         img_height = img.shape[0]
 
-        # Dodaj liczby bolidów do obrazu w lewym dolnym rogu z tłem
+        # Dodaj liczby bolidów do obrazu w lewym dolnym rogu
         for idx, (team, count) in enumerate(team_counts.items()):
             text = f'{team}: {count}'
             # Oblicz szerokość i wysokość tekstu

@@ -55,7 +55,7 @@ for result in results:
     # Pobierz wysokość obrazu
     img_height = img.shape[0]
 
-    # Dodaj liczby bolidów do obrazu w lewym dolnym rogu z tłem
+    # Dodaj liczby bolidów do obrazu w lewym dolnym rogu
     for idx, (team, count) in enumerate(team_counts.items()):
         text = f'{team}: {count}'
         # Oblicz szerokość i wysokość tekstu
